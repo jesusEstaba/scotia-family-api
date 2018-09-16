@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/goal",
+      "handler": "Goal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/goal/count",
+      "handler": "Goal.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/goal/:_id",
+      "handler": "Goal.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/goal",
+      "handler": "Goal.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/goal/:_id",
+      "handler": "Goal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/goal/:_id",
+      "handler": "Goal.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

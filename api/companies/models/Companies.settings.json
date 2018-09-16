@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "companies",
+  "info": {
+    "name": "companies",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "partners": {
+      "collection": "partner",
+      "via": "companies"
+    },
+    "cards": {
+      "collection": "card",
+      "via": "companies"
+    }
+  }
+}

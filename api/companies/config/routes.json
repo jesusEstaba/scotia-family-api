@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/companies",
+      "handler": "Companies.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/companies/count",
+      "handler": "Companies.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/companies/:_id",
+      "handler": "Companies.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/companies",
+      "handler": "Companies.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/companies/:_id",
+      "handler": "Companies.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/companies/:_id",
+      "handler": "Companies.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "partner",
+  "info": {
+    "name": "partner",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "companies": {
+      "model": "companies",
+      "via": "partners"
+    },
+    "products": {
+      "collection": "products",
+      "via": "partner"
+    },
+    "image": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

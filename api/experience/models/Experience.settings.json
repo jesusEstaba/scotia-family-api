@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "experience",
+  "info": {
+    "name": "experience",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "amount": {
+      "default": "",
+      "type": "decimal"
+    },
+    "points": {
+      "default": "",
+      "type": "integer"
+    },
+    "image": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

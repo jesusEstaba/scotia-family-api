@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "point",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "amount": {
+      "default": "",
+      "type": "decimal"
+    },
+    "place": {
+      "default": "",
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "points",
+      "plugin": "users-permissions"
+    },
+    "points": {
+      "default": "",
+      "type": "integer"
+    },
+    "income": {
+      "default": false,
+      "type": "boolean"
+    },
+    "created": {
+      "default": "",
+      "type": "date"
+    },
+    "card": {
+      "model": "card",
+      "via": "points"
+    }
+  }
+}

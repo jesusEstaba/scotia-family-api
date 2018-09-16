@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "goal",
+  "info": {
+    "name": "goal",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "state": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "started",
+        "pending",
+        "success"
+      ]
+    },
+    "user": {
+      "model": "user",
+      "via": "goals",
+      "plugin": "users-permissions"
+    },
+    "products": {
+      "model": "products",
+      "via": "goals"
+    }
+  }
+}

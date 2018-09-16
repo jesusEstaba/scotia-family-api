@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "card",
+  "info": {
+    "name": "card",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "default": {
+      "default": false,
+      "type": "boolean"
+    },
+    "companies": {
+      "model": "companies",
+      "via": "cards"
+    },
+    "terminal_numer": {
+      "default": "",
+      "type": "string"
+    },
+    "balance": {
+      "default": "",
+      "type": "integer"
+    },
+    "points": {
+      "collection": "point",
+      "via": "card"
+    },
+    "user": {
+      "model": "user",
+      "via": "cards",
+      "plugin": "users-permissions"
+    }
+  }
+}
